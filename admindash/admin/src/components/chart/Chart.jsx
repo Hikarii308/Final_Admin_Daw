@@ -8,24 +8,24 @@ const Chart = ({ aspect, title }) => {
       {
         name: 'Project Progress (Bar)',
         data: [50, 70, 30, 90],
-        type: 'bar', // Set this series as a bar chart
+        type: 'bar', 
       },
       {
         name: 'Project Progress (Line)',
         data: [30, 50, 40, 80],
-        type: 'line', // Set this series as a line chart
+        type: 'line', 
       },
     ],
     options: {
       chart: {
         height: 350,
-        type: 'line', // Default type to 'line'
+        type: 'line', 
         toolbar: {
-          show: false, // Disable toolbar (including zoom and home buttons)
+          show: false, 
         },
       },
       stroke: {
-        width: [0, 4], // Set stroke width for each series, 0 for bar and 4 for line
+        width: [0, 4], 
         curve: 'smooth',
       },
       dataLabels: {
@@ -68,6 +68,7 @@ const Chart = ({ aspect, title }) => {
           ],
         },
       },
+      colors: ['#703261', '#cfbcc7'], 
     },
   });
 
@@ -78,7 +79,7 @@ const Chart = ({ aspect, title }) => {
         <ReactApexChart
           options={state.options}
           series={state.series}
-          type="line" // Default type is 'line'
+          type="line" 
           height={350}
         />
       </div>
