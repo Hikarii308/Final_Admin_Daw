@@ -1,0 +1,21 @@
+.chart {
+  border-radius: 10px;
+  flex: 4;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(153, 130, 130, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(176, 192, 118, 0.47);
+  padding: 10px;
+  color: rgb(142, 150, 122);
+
+  .title {
+    margin-bottom: 20px;
+    color: rgb(148, 133, 150);
+  }
+}
+.MuiDataGrid-root .MuiDataGrid-row.Mui-selected {
+  background-color: transparent !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-row:hover {
+  background-color: transparent !important; 
+}
+

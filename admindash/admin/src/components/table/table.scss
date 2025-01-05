@@ -1,0 +1,67 @@
+.table {
+  border-radius: 10px;
+  border-color: rgb(105, 92, 105);
+  .cellWrapper {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+
+    .image {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .status {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.Approved {
+      color: green;
+      background-color: rgba(0, 128, 0, 0.151);
+    }
+    &.Pending {
+      color: goldenrod;
+      background-color: rgba(189, 189, 3, 0.103);
+    }
+    &.Declined {
+      color: rgb(252, 26, 26);
+      background-color: rgba(189, 189, 3, 0.103);
+    }
+  }
+}
+
+.editButton{
+  margin-left: 10px;
+background-color: rgb(235, 218, 226);
+color: rgb(97, 25, 79);
+border-radius: 8px;
+border-color: rgb(255, 241, 228);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .datatable {
+    .datagrid {
+      .MuiDataGrid-columnHeaders {
+      }
+      .MuiDataGrid-row {
+        .MuiDataGrid-cell {
+          &:not(.MuiDataGrid-cell--action) {
+            &:not(.MuiDataGrid-cell--username) {
+              &:not(.MuiDataGrid-cell--submissions) {
+              
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

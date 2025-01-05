@@ -1,0 +1,192 @@
+.listlogin  {
+    margin-left: 0px;
+    background-color: rgb(97, 25, 79);
+    }
+    :root {
+    --purple: rgb(82, 52, 74);
+    --purple-light: #30192d;
+    --light-purple: #d9abff;
+    }
+    
+    .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: calc(100vh - 50px);
+    margin-top: 0px;
+    width: 100%;
+    position: relative;
+    }
+    
+    .profile-card {
+    background: var(--purple-light);
+    width: 400px;
+    padding: 3rem;
+    border-radius: 10px;
+    min-height: 400px;
+    position: relative;
+    color: #fff;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    }
+    
+    .profile-card .profile-pic {
+    margin-top: 0px;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    }
+    
+    .profile-card .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    
+    .profile-card .profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    }
+    
+    .profile-details .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0px;
+    }
+    
+    .profile-details .intro h2 {
+    margin-top: 0px;
+    }
+    
+    .profile-details .intro h4 {
+    background: var(--purple);
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 8px;
+    margin-bottom: 0px;
+    }
+    
+    .profile-details .intro .social {
+    
+    
+    margin-bottom: 15px;
+    }
+    
+    .profile-details .intro .social i {
+    color: #ddd;
+    font-size: 16px;
+    background-color: #222;
+    margin: 0px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 0px;
+    }
+    
+    .profile-details .intro .social i:hover {
+    transform: scale(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .profile-details .contact-info {
+    background-color: #5e495d;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    }
+    
+    .profile-details .contact-info .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+    margin-bottom: 0px;
+    }
+    
+    .contact-info .row .icon {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: var(--purple);
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+    }
+    
+    .row .icon:hover {
+    transform: scale(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .row .content {
+    min-width: 70%;
+    }
+    
+    .row .content span {
+    font-size: 12px;
+    }
+    
+    .logout-btn {
+    background-color: #5e495d;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    border-color: #fff;
+    }
+    
+    .edit-btn {
+    background-color: #5e495d;
+    color: #fff;
+    border-radius: 30px;
+    border-color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 3px;
+    }
+    .listLogin {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        padding: 20px;
+      }
+      
+      .profileContainer {
+        flex: 1;
+        margin-right: 20px;
+      }
+      
+     
+      
+      .profile-card {
+        background: var(--purple-light);
+        width: 100%;
+        padding: 3rem;
+        border-radius: 10px;
+        min-height: 400px;
+        position: relative;
+        color: #fff;
+        margin: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+      }
+   

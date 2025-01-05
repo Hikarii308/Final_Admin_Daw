@@ -1,0 +1,213 @@
+.datatable {
+  align-items: center;
+  justify-content: center; 
+
+  height: 600px;
+  padding: 20px;
+  
+  .datatableTitle{
+    width: 100%;
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link{
+      text-decoration: none;
+      color: rgb(134, 13, 108);
+      font-size: 16px;
+      font-weight: 400;
+      border: 1px solid rgb(102, 0, 128);
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.active {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: green;
+    }
+    &.pending {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: goldenrod;
+    }
+    &.passive {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: crimson;
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .viewButton {
+      background-color:rgb(244, 217, 252) ;
+      padding: 4px 7px;
+      border-radius: 5px;
+      color:  rgba(116, 0, 139, 0.596);
+      
+      cursor: pointer;
+    }
+    .approveButton{
+      padding: 2px 5px;
+      border-radius: 5px;
+      background-color: rgb(211, 255, 211);
+      color: rgb(61, 143, 29);
+      cursor: pointer;
+    }
+    
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      background-color: rgba(255, 218, 225, 0.6);
+      color: rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+    }
+  }
+}
+.table {
+  width: 100%;
+  table-layout: fixed;
+  .tableCell {
+    padding: 10px;
+  }
+
+  .statusButton {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .approved {
+    background-color: rgb(211, 255, 211);
+    color: rgb(61, 143, 29);
+  }
+
+  .pending {
+    background-color: rgb(255, 241, 215);
+    color: rgb(211, 177, 28);
+  }
+
+  .declined {
+    background-color: rgb(255, 239, 239);
+    color: rgb(180, 31, 31);
+  }
+
+  .statusButton:hover {
+    opacity: 0.8;
+  }
+}
+
+
+
+.cellAction select {
+ 
+  padding: 8px;
+  border: 1px solid #f3eef2; 
+  border-radius: 7px;
+  background-color: #fcfafb; 
+  color: #545055; 
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.cellAction select:hover {
+  border-color: #aa6d98; 
+  background-color: #ffffff; 
+}
+
+.cellAction select option {
+  border-radius: 10px;
+  border-bottom: #333;
+  background-color: #f5f1f3; 
+  color: rgb(138, 67, 102); 
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  padding: 8px;
+  border: none;
+}
+
+
+.cellAction select option:hover {
+  border-radius: 10px;
+  background-color: #a6abd1;
+}
+
+
+.cellAction {
+  border-radius: 10px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+.cellAction .deleteButton {
+  padding: 8px 12px;
+  border: none;
+  background-color: #fe7a7a; 
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cellAction .deleteButton:hover {
+  background-color: #fdd9d9; 
+}
+.navigateButton {
+  margin-left: 510px;
+  margin-top: 40px;
+  padding: 15px 19px;
+  font-size: 18px;
+  background-color: #b5aac9; 
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navigateButton:hover {
+  background-color: #721c75; 
+  transform: scale(1.05); 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.navigateButton:active {
+  background-color: #68076b; 
+  transform: scale(1); 
+  box-shadow: none; 
+}

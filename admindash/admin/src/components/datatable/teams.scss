@@ -1,0 +1,221 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popupContent {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 50%;
+    max-height: 80%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scrollableContainer {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .studentFields {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .popupActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .popupActions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc53ee;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .popupActions button:hover {
+    background-color: #68076b;
+  }
+  
+.cellAction {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.cellAction .editButton {
+  padding: 4px 11px;
+  background-color: #a6abd1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cellAction .editButton:hover {
+  background-color: #9452a5;
+}
+
+.cellAction .deleteButton {
+  padding: 8px 12px;
+  background-color: #e93c3c; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cellAction .deleteButton:hover {
+  background-color: #ffcaca; 
+}
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+}
+.addButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px; 
+  left: 110px;
+  width: 100%;
+  z-index: 20; 
+}
+
+
+.addGroupButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #9ea3cb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.addGroupButton:hover {
+  background-color: #721c75; /* Lighter color when hovered */
+  transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+.addGroupButton:active {
+  background-color: #ec90ba; /* Color when clicked */
+  transform: scale(1); /* Reset the size on click */
+}
+
+
+.addFieldsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 30px; 
+  padding-bottom: 20px; 
+}
+
+.addFieldsContainer h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.addFieldsContainer label {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.addFieldsContainer input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.saveGroupButton {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #d1a1c1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.saveGroupButton.saveGroupButton.editButton:hover
+{
+  background-color: #68076b;
+}
+.addButton,
+.saveGroupButton {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #f7adcd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addButton:hover,
+.saveGroupButton:hover {
+  background-color: #b945a0; 
+  transform: scale(1.05); 
+}
+
+.addButton:active,
+.saveGroupButton:active {
+  background-color: #ec90ba; 
+  transform: scale(1); 
+}
+
